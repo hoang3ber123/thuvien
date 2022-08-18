@@ -1,0 +1,196 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body ul{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+body a{
+    color: grey;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+body a:hover {
+    color: black;
+}
+header{
+    z-index: 999999;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    box-shadow: 2px 2px 2px gray;
+    display: flex;
+    width: 100%;
+}
+header>div:last-child{
+    width: 25%;
+    margin-left:auto ;
+}
+header >div:first-child{
+    width: 70%;
+}
+header img{
+    width: 100%;
+    height: 100px;
+}
+ul{
+    align-items: center;
+}
+ul.mainMenu{
+    height:100px ;
+    display: flex;
+}
+ul.mainMenu >li{
+    width: 20%;
+}
+ul.mainMenu >li >a{
+    display: block;
+    width: 100%;
+    padding: 40px 0px;
+}
+ul.mainMenu >li:first-child >a{
+    padding: 0;
+}
+ul.subMenu{
+    display: none;
+    position: absolute;
+}
+ul.role{
+    height: 100px;
+    display: flex;
+}
+ul.role li{
+    width: 33%;
+}
+ul.role li:first-child{
+    border-right: 2px solid grey;
+}
+ul.mainMenu >li:hover ul.subMenu{
+    display: block;
+}
+div#find{
+    display: none;
+    margin-top: 4px;
+    width: 100%;
+    position: absolute ;
+    top: 102px;
+    padding: 0;
+}
+div#find input[type="text"]{
+    color: grey;
+    padding: 0;
+    font-size: 2em;
+    height: 60px;
+    width: 100%;
+    border-radius: 20px;
+    border: 6px grey solid;
+    animation: doimauinput 1s ease infinite;
+    overflow: hidden;
+}
+button#sign:hover{
+    opacity: 0.7;
+}
+div#backtop{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    background-color: orange;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+}
+div.fill{
+    width: 100%;
+    height: 110px;
+}
+section{
+    text-align: center;
+}
+h1.title::after{
+    content: "---o0o---";
+    display: block;
+}
+section >div{
+    width: 100%;
+    background-image: url("https://thongtinz.com/wp-content/uploads/2020/08/hinh-nen-phong-canh-33.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+div.items{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+div.item{
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+div.item img{
+    width: 100%;
+}
+button#read{
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: greenyellow;
+    border-radius: 5px;
+    display: block;
+}
+button#read:hover{
+    opacity: 0.7;
+}
+div.subItem{
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0;
+    position: absolute;
+    top: 15px;
+    bottom: 50px;
+    left: 20px;
+    right: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+div.item:hover div.subItem{
+    opacity: 1;
+}
+div.subItem a{
+    color: yellow;
+}
+button.subButton{
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: orange;
+    border-radius: 5px;
+    display: block;
+}
+button.subButton:hover{
+    opacity: 0.7;
+}
+
+
+@keyframes doimauinput {
+    from{
+        border-color: grey;
+    }
+    to{
+        border-color: pink;
+    }
+}
+
