@@ -184,7 +184,59 @@ button.subButton:hover{
     opacity: 0.7;
 }
 
-
+ul.introContent{
+    width: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    border-bottom: 2px solid ;
+    box-shadow: 1px 1px 1px  #00cec9;
+}
+ul.introContent li {
+    margin-right: 10px;
+    position: relative;
+}
+ul.introContent li a{
+    color: #faa31b;
+    display: block;
+    width: 100%;
+    padding: 0;
+    text-transform: uppercase;
+    padding: 10px;
+}
+ul.introContent li a::after{
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    height: 3px;
+    background-color: transparent;
+    left: 0;
+    bottom: -14px;
+}
+ul.introContent li.active a::after{
+    background-color:#d63031 ;
+}
+ul.introContent li:hover a::after{
+    background-color:#d63031 ;
+}
+div.introItem{
+    padding: 10px;
+    box-shadow: 1px 1px 1px grey ;
+}
+div.close{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #faa31b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+}
+div.close{
+    cursor: pointer;
+}
 @keyframes doimauinput {
     from{
         border-color: grey;
