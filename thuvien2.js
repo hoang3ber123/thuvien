@@ -14,5 +14,16 @@ $(document).ready(function(){
 
         $("div#find").toggle(1000)
     })
-
+    $("div.introItem").hide();
+    $("ul.introContent li ").click(function(){
+        $("ul.introContent li ").removeClass("active")
+        $(this).addClass("active")
+        let id_tab=$(this).children("a").attr("href")
+        $("div.introItem").hide();
+        $(id_tab).slideDown("slow")
+        $("html,body").animate({scrollTop:0});
+    })
+    $("div.close").click(function(){
+        $("div.introItem").slideUp("slow")
+    })
 })
