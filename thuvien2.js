@@ -12,7 +12,11 @@ $(document).ready(function(){
     })
     $("li.find >a").click(function(){
 
-        $("div#find").toggle(1000)
+        $("div#find").fadeIn(1000,function(){
+            $("div#find").change(function(){
+                $("div#find").fadeOut()
+            })
+        })
     })
     $("div.introItem").hide();
     $("ul.introContent li ").click(function(){
