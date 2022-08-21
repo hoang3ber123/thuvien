@@ -12,9 +12,10 @@ $(document).ready(function(){
     })
     $("li.find >a").click(function(){
 
-        $("div#find").fadeIn(1000,function(){
+        $("div#find").fadeToggle(1000,function(){
             $("div#find").change(function(){
                 $("div#find").fadeOut()
+                $("div#find input:text").val("")
             })
         })
     })
@@ -40,7 +41,7 @@ $(document).ready(function(){
                 if($(this).scrollTop()>$("#tacPham").prop("offsetTop")-200){
                     for(let i=0;i<img.length;i++)
                         {
-                            let c=(i+1)*1000
+                            let c=(i)*1000
                             $(".tacGia img").eq(i).fadeIn(c)
                         }
                 }
