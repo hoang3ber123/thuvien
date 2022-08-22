@@ -1,0 +1,72 @@
+header{
+    position: relative;
+    display: flex!important;
+    flex-wrap: wrap;
+}
+div.fill{
+    display: none;
+}
+header>div{
+    width: 100% !important;
+}
+ul.mainMenu{
+    width: 100%;
+}
+ul.mainMenu li{
+    width: 20%;
+    margin: 0;
+    padding: 0;
+}
+div.items{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+div.item{
+    height: 100%;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+div.subItem{
+    top: 10px;
+    bottom: 20px;
+    left: 10px;
+    right: 10px;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 15px;
+}
+
+div.item img{
+    width: 100%;
+    height: 200px;
+}
+section.tacGia>div{
+    width: 100%;margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+section.tacGia>div img{
+    height: 100%;
+}
+div.footInfo{
+    padding:0;
+    margin: 0 ;
+    width: 100%;
+    color: white;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: space-between;
+    border-bottom: 3px solid white;
+}
+div.footInfo li{
+    padding: 10px;
+}
+.buttonFooter i{
+    margin-left:-10px;
+}
