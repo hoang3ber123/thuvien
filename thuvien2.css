@@ -55,6 +55,7 @@ ul{
 ul.mainMenu{
     height:100px ;
     display: flex;
+    flex-wrap: wrap;
 }
 ul.mainMenu >li{
     width: 20%;
@@ -67,9 +68,15 @@ ul.mainMenu >li >a{
 ul.mainMenu >li:first-child >a{
     padding: 0;
 }
+nav li{
+    position: relative;
+}
 ul.subMenu{
-    display: none;
+    width: 100%;
     position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity ease 2s;
 }
 ul.role{
     height: 100px;
@@ -258,6 +265,7 @@ section.tacGia{
     width: 100%;
 }
 section.tacGia>div{
+    width: 80%;margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
@@ -301,12 +309,12 @@ footer a{
     color: white ;
 }
 .buttonFooter{
-    width: 30%;
+    width: 40%;
     border-radius: 30px 30px 0 0;
     text-align: center;
     background-color: #10ac84;
     border-color: #10ac84;
-    height: 30px;
+    height: 20px;
     margin: 0 auto;
     font-size: 30px;
     padding: 10px;
