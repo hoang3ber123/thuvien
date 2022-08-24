@@ -70,3 +70,18 @@ div.footInfo li{
 .buttonFooter i{
     margin-left:-10px;
 }
+div#backtop{
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background-color: orange;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 75px;
+    z-index: 999999;
+}
