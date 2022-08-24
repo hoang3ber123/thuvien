@@ -26,6 +26,9 @@ body a{
 body a:hover {
     color: black;
 }
+body li{
+    margin: 0% !important;
+}
 header{
     z-index: 999999;
     background-color: white;
