@@ -74,13 +74,6 @@ ul.mainMenu >li:first-child >a{
 nav li{
     position: relative;
 }
-ul.subMenu{
-    width: 100%;
-    position: absolute;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity ease 2s;
-}
 ul.role{
     height: 100px;
     display: flex;
