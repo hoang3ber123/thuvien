@@ -82,6 +82,6 @@ div#backtop{
     border-radius: 50%;
     position: fixed;
     bottom: 40px;
-    right: 75px;
+    right: 20%;
     z-index: 999999;
 }
